@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario con Gráficas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Registro</h1>
+    <form id="formulario">
+      <label>Nombre Completo:</label>
+      <input type="text" name="nombre" required>
+
+      <label>Cargo:</label>
+      <input type="text" name="cargo" required>
+
+      <label>Tipo de Actividad:</label>
+      <input type="text" name="actividad" required>
+
+      <label>Edad:</label>
+      <input type="number" name="edad" required min="1">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <div class="charts">
+      <canvas id="graficoCargo"></canvas>
+      <canvas id="graficoActividad"></canvas>
+      <canvas id="graficoEdad"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
